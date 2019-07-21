@@ -16,6 +16,7 @@ def get_japanese_emoticon (file, e_emoticon)
     if file.include? (e_emoticon)
       return translation[1]
     end 
+  end 
   #puts "Type the English emoticon you would like to translate."
   #english_e = gets.chomp!
   #file.each do |meaning, translation|
