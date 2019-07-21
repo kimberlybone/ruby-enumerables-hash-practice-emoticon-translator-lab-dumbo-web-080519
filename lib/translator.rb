@@ -1,6 +1,6 @@
 require "yaml"
 
-def load_library (file)
+def load_library (file_path)
   emojifile = YAML.load_file('emoticons.yml')
   hash = {"get_meaning" => {}, "get_emoticon" => {}}
   emojifile.each do |meaning, emoji| 
