@@ -10,10 +10,12 @@ def load_library (file)
   return hash
 end
 
-def get_japanese_emoticon (file, emoticon)
+def get_japanese_emoticon (file, e_emoticon)
   load_library(file)
   file.each do |meaning, translation|
-    if file.include? 
+    if file.include? (e_emoticon)
+      return translation[1]
+    end 
   #puts "Type the English emoticon you would like to translate."
   #english_e = gets.chomp!
   #file.each do |meaning, translation|
