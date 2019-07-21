@@ -17,16 +17,9 @@ def get_japanese_emoticon (file, e_emoticon)
     else 
       return "Sorry, that emoticon was not found"
     end 
-  #puts "Type the English emoticon you would like to translate."
-  #english_e = gets.chomp!
-  #file.each do |meaning, translation|
-   # if english_e != translation[0]
-    #  puts "Sorry, your emoticon #{emoticon} is not a known emoticon. Please enter another."
-     # else 
-     #   return translation[1]
-   # end
- # end
 end
 
-def get_english_meaning(file, emoticon)
+def get_english_meaning(file, j_emoticon)
+  emojifile = load_library(file)
+  if 
 end
