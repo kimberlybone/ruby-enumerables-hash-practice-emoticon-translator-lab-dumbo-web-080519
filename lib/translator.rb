@@ -12,9 +12,7 @@ emojifile.each do |meaning, emoji|
 end
 
 def get_japanese_emoticon (file, emoticon)
-  load_library('emoticons.yml')
 end
 
 def get_english_meaning(file, emoticon)
-  load_library('emoticons.yml')
 end
