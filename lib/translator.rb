@@ -13,7 +13,7 @@ end
 def get_japanese_emoticon (file, emoticon)
   load_library(file)
   file.each do |meaning, translation|
-    if file.include?
+    if file.include? 
   #puts "Type the English emoticon you would like to translate."
   #english_e = gets.chomp!
   #file.each do |meaning, translation|
