@@ -16,12 +16,9 @@ def get_japanese_emoticon (file, emoticon)
   english_e = gets.chomp!
   file.each do |meaning, translation|
   if english_e != translation[0]
-    puts " "
+    puts "Sorry, your emoticon #{emoticon} is not a known emoticon. Please enter another."
   else 
-    puts translation[1]
-  hash ={}
-  hash[]
-  puts "Sorry, your emoticon #{emoticon} is not a known emoticon. Please enter another."
+    return translation[1]
 end
 
 def get_english_meaning(file, emoticon)
