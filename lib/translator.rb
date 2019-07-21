@@ -13,7 +13,7 @@ end
 def get_japanese_emoticon (file, e_emoticon)
   emojifile = load_library(file)
     if emojifile["get_emoticon"].include? (e_emoticon)
-      return translation[1]
+      return emojifile["get_emoticon"][emoji]
     end 
   #puts "Type the English emoticon you would like to translate."
   #english_e = gets.chomp!
