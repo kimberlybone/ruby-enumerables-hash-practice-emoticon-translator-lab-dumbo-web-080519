@@ -12,7 +12,6 @@ end
 
 def get_japanese_emoticon (file, e_emoticon)
   load_library(file)
-  file.each do |meaning, translation|
     if file.include? (e_emoticon)
       return translation[1]
     end 
